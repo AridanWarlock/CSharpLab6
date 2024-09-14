@@ -62,6 +62,21 @@
             Яйцо_ЛВ_2 = new TransPanel();
             Яйцо_ЛВ_3 = new TransPanel();
             Яйцо_ЛВ_4 = new TransPanel();
+            Яйцо_ЛН_0 = new TransPanel();
+            Яйцо_ЛН_1 = new TransPanel();
+            Яйцо_ЛН_2 = new TransPanel();
+            Яйцо_ЛН_3 = new TransPanel();
+            Яйцо_ЛН_4 = new TransPanel();
+            Яйцо_ПВ_0 = new TransPanel();
+            Яйцо_ПВ_1 = new TransPanel();
+            Яйцо_ПВ_2 = new TransPanel();
+            Яйцо_ПВ_3 = new TransPanel();
+            Яйцо_ПВ_4 = new TransPanel();
+            Яйцо_ПН_0 = new TransPanel();
+            Яйцо_ПН_1 = new TransPanel();
+            Яйцо_ПН_2 = new TransPanel();
+            Яйцо_ПН_3 = new TransPanel();
+            Яйцо_ПН_4 = new TransPanel();
             SuspendLayout();
             // 
             // Часы
@@ -421,11 +436,186 @@
             Яйцо_ЛВ_4.Size = new Size(19, 18);
             Яйцо_ЛВ_4.TabIndex = 33;
             // 
+            // Яйцо_ЛН_0
+            // 
+            Яйцо_ЛН_0.BackColor = Color.Transparent;
+            Яйцо_ЛН_0.BackgroundImage = Properties.Resources.Яйцо_ЛН_0;
+            Яйцо_ЛН_0.BackgroundImageLayout = ImageLayout.None;
+            Яйцо_ЛН_0.ImeMode = ImeMode.NoControl;
+            Яйцо_ЛН_0.Location = new Point(309, 317);
+            Яйцо_ЛН_0.Name = "Яйцо_ЛН_0";
+            Яйцо_ЛН_0.RightToLeft = RightToLeft.No;
+            Яйцо_ЛН_0.Size = new Size(18, 18);
+            Яйцо_ЛН_0.TabIndex = 34;
+            // 
+            // Яйцо_ЛН_1
+            // 
+            Яйцо_ЛН_1.BackColor = Color.Transparent;
+            Яйцо_ЛН_1.BackgroundImage = Properties.Resources.Яйцо_ЛН_1;
+            Яйцо_ЛН_1.BackgroundImageLayout = ImageLayout.None;
+            Яйцо_ЛН_1.ImeMode = ImeMode.NoControl;
+            Яйцо_ЛН_1.Location = new Point(328, 323);
+            Яйцо_ЛН_1.Name = "Яйцо_ЛН_1";
+            Яйцо_ЛН_1.RightToLeft = RightToLeft.No;
+            Яйцо_ЛН_1.Size = new Size(19, 18);
+            Яйцо_ЛН_1.TabIndex = 35;
+            // 
+            // Яйцо_ЛН_2
+            // 
+            Яйцо_ЛН_2.BackColor = Color.Transparent;
+            Яйцо_ЛН_2.BackgroundImage = Properties.Resources.Яйцо_ЛН_2;
+            Яйцо_ЛН_2.BackgroundImageLayout = ImageLayout.None;
+            Яйцо_ЛН_2.ImeMode = ImeMode.NoControl;
+            Яйцо_ЛН_2.Location = new Point(340, 336);
+            Яйцо_ЛН_2.Name = "Яйцо_ЛН_2";
+            Яйцо_ЛН_2.RightToLeft = RightToLeft.No;
+            Яйцо_ЛН_2.Size = new Size(23, 16);
+            Яйцо_ЛН_2.TabIndex = 36;
+            // 
+            // Яйцо_ЛН_3
+            // 
+            Яйцо_ЛН_3.BackColor = Color.Transparent;
+            Яйцо_ЛН_3.BackgroundImage = Properties.Resources.Яйцо_ЛН_3;
+            Яйцо_ЛН_3.BackgroundImageLayout = ImageLayout.None;
+            Яйцо_ЛН_3.ImeMode = ImeMode.NoControl;
+            Яйцо_ЛН_3.Location = new Point(361, 346);
+            Яйцо_ЛН_3.Name = "Яйцо_ЛН_3";
+            Яйцо_ЛН_3.RightToLeft = RightToLeft.No;
+            Яйцо_ЛН_3.Size = new Size(18, 19);
+            Яйцо_ЛН_3.TabIndex = 37;
+            // 
+            // Яйцо_ЛН_4
+            // 
+            Яйцо_ЛН_4.BackColor = Color.Transparent;
+            Яйцо_ЛН_4.BackgroundImage = Properties.Resources.Яйцо_ЛН_4;
+            Яйцо_ЛН_4.BackgroundImageLayout = ImageLayout.None;
+            Яйцо_ЛН_4.ImeMode = ImeMode.NoControl;
+            Яйцо_ЛН_4.Location = new Point(378, 356);
+            Яйцо_ЛН_4.Name = "Яйцо_ЛН_4";
+            Яйцо_ЛН_4.RightToLeft = RightToLeft.No;
+            Яйцо_ЛН_4.Size = new Size(23, 16);
+            Яйцо_ЛН_4.TabIndex = 38;
+            // 
+            // Яйцо_ПВ_0
+            // 
+            Яйцо_ПВ_0.BackColor = Color.Transparent;
+            Яйцо_ПВ_0.BackgroundImage = Properties.Resources.Яйцо_ПВ_0;
+            Яйцо_ПВ_0.BackgroundImageLayout = ImageLayout.None;
+            Яйцо_ПВ_0.Location = new Point(693, 248);
+            Яйцо_ПВ_0.Name = "Яйцо_ПВ_0";
+            Яйцо_ПВ_0.Size = new Size(19, 20);
+            Яйцо_ПВ_0.TabIndex = 11;
+            // 
+            // Яйцо_ПВ_1
+            // 
+            Яйцо_ПВ_1.BackColor = Color.Transparent;
+            Яйцо_ПВ_1.BackgroundImage = Properties.Resources.Яйцо_ПВ_1;
+            Яйцо_ПВ_1.BackgroundImageLayout = ImageLayout.None;
+            Яйцо_ПВ_1.Location = new Point(678, 255);
+            Яйцо_ПВ_1.Name = "Яйцо_ПВ_1";
+            Яйцо_ПВ_1.Size = new Size(15, 22);
+            Яйцо_ПВ_1.TabIndex = 39;
+            // 
+            // Яйцо_ПВ_2
+            // 
+            Яйцо_ПВ_2.BackColor = Color.Transparent;
+            Яйцо_ПВ_2.BackgroundImage = Properties.Resources.Яйцо_ПВ_2;
+            Яйцо_ПВ_2.BackgroundImageLayout = ImageLayout.None;
+            Яйцо_ПВ_2.Location = new Point(659, 267);
+            Яйцо_ПВ_2.Name = "Яйцо_ПВ_2";
+            Яйцо_ПВ_2.Size = new Size(18, 19);
+            Яйцо_ПВ_2.TabIndex = 40;
+            // 
+            // Яйцо_ПВ_3
+            // 
+            Яйцо_ПВ_3.BackColor = Color.Transparent;
+            Яйцо_ПВ_3.BackgroundImage = Properties.Resources.Яйцо_ПВ_3;
+            Яйцо_ПВ_3.BackgroundImageLayout = ImageLayout.None;
+            Яйцо_ПВ_3.Location = new Point(643, 281);
+            Яйцо_ПВ_3.Name = "Яйцо_ПВ_3";
+            Яйцо_ПВ_3.Size = new Size(21, 15);
+            Яйцо_ПВ_3.TabIndex = 41;
+            // 
+            // Яйцо_ПВ_4
+            // 
+            Яйцо_ПВ_4.BackColor = Color.Transparent;
+            Яйцо_ПВ_4.BackgroundImage = Properties.Resources.Яйцо_ПВ_4;
+            Яйцо_ПВ_4.BackgroundImageLayout = ImageLayout.None;
+            Яйцо_ПВ_4.Location = new Point(629, 291);
+            Яйцо_ПВ_4.Name = "Яйцо_ПВ_4";
+            Яйцо_ПВ_4.Size = new Size(14, 22);
+            Яйцо_ПВ_4.TabIndex = 42;
+            // 
+            // Яйцо_ПН_0
+            // 
+            Яйцо_ПН_0.BackColor = Color.Transparent;
+            Яйцо_ПН_0.BackgroundImage = Properties.Resources.Яйцо_ПН_0;
+            Яйцо_ПН_0.BackgroundImageLayout = ImageLayout.None;
+            Яйцо_ПН_0.Location = new Point(691, 318);
+            Яйцо_ПН_0.Name = "Яйцо_ПН_0";
+            Яйцо_ПН_0.Size = new Size(22, 16);
+            Яйцо_ПН_0.TabIndex = 43;
+            // 
+            // Яйцо_ПН_1
+            // 
+            Яйцо_ПН_1.BackColor = Color.Transparent;
+            Яйцо_ПН_1.BackgroundImage = Properties.Resources.Яйцо_ПН_1;
+            Яйцо_ПН_1.BackgroundImageLayout = ImageLayout.None;
+            Яйцо_ПН_1.Location = new Point(675, 324);
+            Яйцо_ПН_1.Name = "Яйцо_ПН_1";
+            Яйцо_ПН_1.Size = new Size(16, 23);
+            Яйцо_ПН_1.TabIndex = 44;
+            // 
+            // Яйцо_ПН_2
+            // 
+            Яйцо_ПН_2.BackColor = Color.Transparent;
+            Яйцо_ПН_2.BackgroundImage = Properties.Resources.Яйцо_ПН_2;
+            Яйцо_ПН_2.BackgroundImageLayout = ImageLayout.None;
+            Яйцо_ПН_2.Location = new Point(658, 336);
+            Яйцо_ПН_2.Name = "Яйцо_ПН_2";
+            Яйцо_ПН_2.Size = new Size(19, 19);
+            Яйцо_ПН_2.TabIndex = 45;
+            // 
+            // Яйцо_ПН_3
+            // 
+            Яйцо_ПН_3.BackColor = Color.Transparent;
+            Яйцо_ПН_3.BackgroundImage = Properties.Resources.Яйцо_ПН_3;
+            Яйцо_ПН_3.BackgroundImageLayout = ImageLayout.None;
+            Яйцо_ПН_3.Location = new Point(641, 350);
+            Яйцо_ПН_3.Name = "Яйцо_ПН_3";
+            Яйцо_ПН_3.Size = new Size(22, 16);
+            Яйцо_ПН_3.TabIndex = 46;
+            // 
+            // Яйцо_ПН_4
+            // 
+            Яйцо_ПН_4.BackColor = Color.Transparent;
+            Яйцо_ПН_4.BackgroundImage = Properties.Resources.Яйцо_ПН_4;
+            Яйцо_ПН_4.BackgroundImageLayout = ImageLayout.None;
+            Яйцо_ПН_4.Location = new Point(625, 356);
+            Яйцо_ПН_4.Name = "Яйцо_ПН_4";
+            Яйцо_ПН_4.Size = new Size(18, 20);
+            Яйцо_ПН_4.TabIndex = 47;
+            // 
             // NuPogodi
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Фон;
+            Controls.Add(Яйцо_ПН_4);
+            Controls.Add(Яйцо_ПН_3);
+            Controls.Add(Яйцо_ПН_2);
+            Controls.Add(Яйцо_ПН_1);
+            Controls.Add(Яйцо_ПН_0);
+            Controls.Add(Яйцо_ПВ_4);
+            Controls.Add(Яйцо_ПВ_3);
+            Controls.Add(Яйцо_ПВ_2);
+            Controls.Add(Яйцо_ПВ_1);
+            Controls.Add(Яйцо_ПВ_0);
+            Controls.Add(Яйцо_ЛН_4);
+            Controls.Add(Яйцо_ЛН_3);
+            Controls.Add(Яйцо_ЛН_2);
+            Controls.Add(Яйцо_ЛН_1);
+            Controls.Add(Яйцо_ЛН_0);
             Controls.Add(Яйцо_ЛВ_4);
             Controls.Add(Яйцо_ЛВ_3);
             Controls.Add(Яйцо_ЛВ_2);
@@ -501,5 +691,20 @@
         private TransPanel Яйцо_ЛВ_2;
         private TransPanel Яйцо_ЛВ_3;
         private TransPanel Яйцо_ЛВ_4;
+        private TransPanel Яйцо_ЛН_0;
+        private TransPanel Яйцо_ЛН_1;
+        private TransPanel Яйцо_ЛН_2;
+        private TransPanel Яйцо_ЛН_3;
+        private TransPanel Яйцо_ЛН_4;
+        private TransPanel Яйцо_ПВ_0;
+        private TransPanel Яйцо_ПВ_1;
+        private TransPanel Яйцо_ПВ_2;
+        private TransPanel Яйцо_ПВ_3;
+        private TransPanel Яйцо_ПВ_4;
+        private TransPanel Яйцо_ПН_0;
+        private TransPanel Яйцо_ПН_1;
+        private TransPanel Яйцо_ПН_2;
+        private TransPanel Яйцо_ПН_3;
+        private TransPanel Яйцо_ПН_4;
     }
 }
