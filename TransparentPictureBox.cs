@@ -26,7 +26,7 @@ namespace CSharpLab6
         {
             if (Parent == null)
                 return;
-            Rectangle rc = new Rectangle(this.Location, this.Size);
+            var rc = new Rectangle(Location, Size);
 
             Parent.Invalidate(rc, true);
         }
