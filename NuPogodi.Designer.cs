@@ -77,6 +77,10 @@
             Яйцо_ПН_2 = new TransPanel();
             Яйцо_ПН_3 = new TransPanel();
             Яйцо_ПН_4 = new TransPanel();
+            redButton0 = new RoundButton();
+            redButton1 = new RoundButton();
+            redButton2 = new RoundButton();
+            redButton3 = new RoundButton();
             SuspendLayout();
             // 
             // Часы
@@ -391,6 +395,7 @@
             Яйцо_ЛВ_0.Name = "Яйцо_ЛВ_0";
             Яйцо_ЛВ_0.Size = new Size(21, 20);
             Яйцо_ЛВ_0.TabIndex = 29;
+            Яйцо_ЛВ_0.Visible = false;
             // 
             // Яйцо_ЛВ_1
             // 
@@ -596,11 +601,55 @@
             Яйцо_ПН_4.Size = new Size(18, 20);
             Яйцо_ПН_4.TabIndex = 47;
             // 
+            // redButton0
+            // 
+            redButton0.BackColor = Color.Transparent;
+            redButton0.FlatStyle = FlatStyle.Popup;
+            redButton0.Location = new Point(93, 376);
+            redButton0.Name = "redButton0";
+            redButton0.Size = new Size(75, 75);
+            redButton0.TabIndex = 48;
+            redButton0.UseVisualStyleBackColor = false;
+            // 
+            // redButton1
+            // 
+            redButton1.BackColor = Color.Transparent;
+            redButton1.FlatStyle = FlatStyle.Popup;
+            redButton1.Location = new Point(93, 480);
+            redButton1.Name = "redButton1";
+            redButton1.Size = new Size(75, 75);
+            redButton1.TabIndex = 49;
+            redButton1.UseVisualStyleBackColor = false;
+            // 
+            // redButton2
+            // 
+            redButton2.BackColor = Color.Transparent;
+            redButton2.FlatStyle = FlatStyle.Popup;
+            redButton2.Location = new Point(855, 376);
+            redButton2.Name = "redButton2";
+            redButton2.Size = new Size(75, 75);
+            redButton2.TabIndex = 50;
+            redButton2.UseVisualStyleBackColor = false;
+            // 
+            // redButton3
+            // 
+            redButton3.BackColor = Color.Transparent;
+            redButton3.FlatStyle = FlatStyle.Popup;
+            redButton3.Location = new Point(855, 480);
+            redButton3.Name = "redButton3";
+            redButton3.Size = new Size(75, 75);
+            redButton3.TabIndex = 51;
+            redButton3.UseVisualStyleBackColor = false;
+            // 
             // NuPogodi
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Фон;
+            Controls.Add(redButton3);
+            Controls.Add(redButton2);
+            Controls.Add(redButton1);
+            Controls.Add(redButton0);
             Controls.Add(Яйцо_ПН_4);
             Controls.Add(Яйцо_ПН_3);
             Controls.Add(Яйцо_ПН_2);
@@ -706,5 +755,9 @@
         private TransPanel Яйцо_ПН_2;
         private TransPanel Яйцо_ПН_3;
         private TransPanel Яйцо_ПН_4;
+        private RoundButton redButton0;
+        private RoundButton redButton1;
+        private RoundButton redButton2;
+        private RoundButton redButton3;
     }
 }

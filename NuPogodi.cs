@@ -1,21 +1,130 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.ComponentModel;
 
 namespace CSharpLab6
 {
     public partial class NuPogodi : UserControl
     {
+        private List<List<TransPanel>> _eggPanels;
+
+        private enum BasketState
+        {
+            None = -1,
+            LeftUp,
+            LeftDown,
+            RightDown,
+            RightUp,
+        }
+        private BasketState _state = BasketState.None;
+        private void ChangeBasketState(BasketState state)
+        {
+            _state = state;
+
+            switch (_state)
+            {
+                case BasketState.None:
+                    Волк_Л.Visible = false;
+                    Волк_П.Visible = false;
+
+                    Корзина_ЛВ.Visible = false;
+                    Корзина_ЛН.Visible = false;
+                    Корзина_ПВ.Visible = false;
+                    Корзина_ПН.Visible = false;
+                    break;
+
+                case BasketState.LeftUp:
+                    Волк_Л.Visible = true;
+                    Волк_П.Visible = false;
+
+                    Корзина_ЛВ.Visible = true;
+                    Корзина_ЛН.Visible = false;
+                    Корзина_ПВ.Visible = false;
+                    Корзина_ПН.Visible = false;
+                    break;
+
+                case BasketState.LeftDown:
+                    Волк_Л.Visible = true;
+                    Волк_П.Visible = false;
+
+                    Корзина_ЛВ.Visible = false;
+                    Корзина_ЛН.Visible = true;
+                    Корзина_ПВ.Visible = false;
+                    Корзина_ПН.Visible = false;
+                    break;
+                case BasketState.RightUp:
+                    Волк_Л.Visible = false;
+                    Волк_П.Visible = true;
+
+                    Корзина_ЛВ.Visible = false;
+                    Корзина_ЛН.Visible = false;
+                    Корзина_ПВ.Visible = true;
+                    Корзина_ПН.Visible = false;
+                    break;
+                case BasketState.RightDown:
+                    Волк_Л.Visible = false;
+                    Волк_П.Visible = true;
+
+                    Корзина_ЛВ.Visible = false;
+                    Корзина_ЛН.Visible = false;
+                    Корзина_ПВ.Visible = false;
+                    Корзина_ПН.Visible = true;
+                    break;
+            }
+        }
+
         public NuPogodi()
         {
             InitializeComponent();
-           
+
+            var time = TimeOnly.FromDateTime(DateTime.Now);
+            ДПVisible = time.Hour < 12;
+
+            Рука_зайца_ВVisible = true;
+            Колокольчик_ВVisible = true;
+
+            Штраф_1.Visible = false;
+            Штраф_2.Visible = false;
+            Штраф_3.Visible = false;
+
+            Цепленок_Л_0.Visible = false;
+            Цепленок_Л_1.Visible = false;
+            Цепленок_Л_2.Visible = false;
+            Цепленок_Л_3.Visible = false;
+
+            Цепленок_П_0 .Visible = false;
+            Цепленок_П_1 .Visible = false;
+            Цепленок_П_2 .Visible = false;
+            Цепленок_П_3 .Visible = false;
+
+            Игра_АVisible = true;
+
+            Разбитое_ЛVisible = false;
+            Разбитое_ПVisible = false;
+
+            _eggPanels = [
+                [Яйцо_ЛВ_0, Яйцо_ЛВ_1, Яйцо_ЛВ_2, Яйцо_ЛВ_3, Яйцо_ЛВ_4],
+                [Яйцо_ЛН_0, Яйцо_ЛН_1, Яйцо_ЛН_2, Яйцо_ЛН_3, Яйцо_ЛН_4],
+                [Яйцо_ПВ_0, Яйцо_ПВ_1, Яйцо_ПВ_2, Яйцо_ПВ_3, Яйцо_ПВ_4],
+                [Яйцо_ПН_0, Яйцо_ПН_1, Яйцо_ПН_2, Яйцо_ПН_3, Яйцо_ПН_4]
+            ];
+
+            _eggPanels.ForEach(line => line.ForEach(egg => egg.Visible = false));
+
+            ChangeBasketState(BasketState.RightUp);
+
+            RefreshState();
+        }
+        private void RefreshState()
+        {
+            
+        }
+
+        public int Faults { get; private set; } = 0;
+        public int BasketPosition { get => (int)_state; }
+        public int RunningChickLeft { get; private set; } = -1;
+        public int RunningChickRight { get; private set; } = -1;
+        public IEnumerable<IEnumerable<bool>> Eggs 
+        {
+            get => _eggPanels.Select(eggs => eggs.Select(egg => egg.Visible));
         }
         public bool ЧасыVisible
         {
@@ -105,7 +214,6 @@ namespace CSharpLab6
             private set
             {
                 Разбитое_Л.Visible = value;
-                Разбитое_П.Visible = !value;
             }
         }
         public bool Разбитое_ПVisible
@@ -114,7 +222,6 @@ namespace CSharpLab6
             private set
             {
                 Разбитое_П.Visible = value;
-                Разбитое_Л.Visible = !value;
             }
         }
     }

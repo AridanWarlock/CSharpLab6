@@ -28,53 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
-            panel2 = new Panel();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel2.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            nuPogodi1 = new NuPogodi();
             SuspendLayout();
             // 
-            // pictureBox1
+            // nuPogodi1
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.BackgroundImageLayout = ImageLayout.None;
-            pictureBox1.Image = Properties.Resources.Часы;
-            pictureBox1.Location = new Point(458, 145);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(147, 51);
-            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
-            
-            // 
-            // panel2
-            // 
-            panel2.Location = new Point(90, 67);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(295, 306);
-            panel2.TabIndex = 19;
+            nuPogodi1.BackgroundImage = (Image)resources.GetObject("nuPogodi1.BackgroundImage");
+            nuPogodi1.Location = new Point(3, 12);
+            nuPogodi1.Name = "nuPogodi1";
+            nuPogodi1.Size = new Size(1024, 620);
+            nuPogodi1.TabIndex = 0;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.Фон;
             ClientSize = new Size(1039, 616);
-            Controls.Add(panel2);
-            Controls.Add(pictureBox1);
+            Controls.Add(nuPogodi1);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
-        private Panel panel2;
+        private NuPogodi nuPogodi1;
     }
 }
