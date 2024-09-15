@@ -81,6 +81,10 @@
             redButton1 = new RoundButton();
             redButton2 = new RoundButton();
             redButton3 = new RoundButton();
+            winPointsLabel = new Label();
+            winnerPointsTextBox = new TextBox();
+            game1Button = new RoundButton();
+            gane2Button = new RoundButton();
             SuspendLayout();
             // 
             // Часы
@@ -610,6 +614,7 @@
             redButton0.Size = new Size(75, 75);
             redButton0.TabIndex = 48;
             redButton0.UseVisualStyleBackColor = false;
+            redButton0.Click += redButton0_Click;
             // 
             // redButton1
             // 
@@ -620,6 +625,7 @@
             redButton1.Size = new Size(75, 75);
             redButton1.TabIndex = 49;
             redButton1.UseVisualStyleBackColor = false;
+            redButton1.Click += redButton1_Click;
             // 
             // redButton2
             // 
@@ -630,6 +636,7 @@
             redButton2.Size = new Size(75, 75);
             redButton2.TabIndex = 50;
             redButton2.UseVisualStyleBackColor = false;
+            redButton2.Click += redButton2_Click;
             // 
             // redButton3
             // 
@@ -640,12 +647,62 @@
             redButton3.Size = new Size(75, 75);
             redButton3.TabIndex = 51;
             redButton3.UseVisualStyleBackColor = false;
+            redButton3.Click += redButton3_Click;
+            // 
+            // winPointsLabel
+            // 
+            winPointsLabel.AutoSize = true;
+            winPointsLabel.BackColor = Color.Transparent;
+            winPointsLabel.Font = new Font("Century", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            winPointsLabel.Location = new Point(40, 219);
+            winPointsLabel.Name = "winPointsLabel";
+            winPointsLabel.Size = new Size(55, 25);
+            winPointsLabel.TabIndex = 52;
+            winPointsLabel.Text = "ПО:";
+            // 
+            // winnerPointsTextBox
+            // 
+            winnerPointsTextBox.Font = new Font("Century", 15.75F, FontStyle.Bold);
+            winnerPointsTextBox.ForeColor = SystemColors.ControlText;
+            winnerPointsTextBox.Location = new Point(93, 216);
+            winnerPointsTextBox.Name = "winnerPointsTextBox";
+            winnerPointsTextBox.ReadOnly = true;
+            winnerPointsTextBox.Size = new Size(100, 33);
+            winnerPointsTextBox.TabIndex = 53;
+            winnerPointsTextBox.Text = "0";
+            winnerPointsTextBox.TextAlign = HorizontalAlignment.Center;
+            // 
+            // game1Button
+            // 
+            game1Button.BackColor = Color.Transparent;
+            game1Button.FlatStyle = FlatStyle.Popup;
+            game1Button.Location = new Point(841, 76);
+            game1Button.Name = "game1Button";
+            game1Button.Size = new Size(75, 50);
+            game1Button.TabIndex = 54;
+            game1Button.UseVisualStyleBackColor = false;
+            game1Button.Click += game1Button_Click;
+            // 
+            // gane2Button
+            // 
+            gane2Button.BackColor = Color.Transparent;
+            gane2Button.FlatStyle = FlatStyle.Popup;
+            gane2Button.Location = new Point(841, 144);
+            gane2Button.Name = "gane2Button";
+            gane2Button.Size = new Size(75, 50);
+            gane2Button.TabIndex = 55;
+            gane2Button.UseVisualStyleBackColor = false;
+            gane2Button.Click += gane2Button_Click;
             // 
             // NuPogodi
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Фон;
+            Controls.Add(gane2Button);
+            Controls.Add(game1Button);
+            Controls.Add(winnerPointsTextBox);
+            Controls.Add(winPointsLabel);
             Controls.Add(redButton3);
             Controls.Add(redButton2);
             Controls.Add(redButton1);
@@ -702,6 +759,7 @@
             Name = "NuPogodi";
             Size = new Size(1024, 620);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -759,5 +817,9 @@
         private RoundButton redButton1;
         private RoundButton redButton2;
         private RoundButton redButton3;
+        private Label winPointsLabel;
+        private TextBox winnerPointsTextBox;
+        private RoundButton game1Button;
+        private RoundButton gane2Button;
     }
 }

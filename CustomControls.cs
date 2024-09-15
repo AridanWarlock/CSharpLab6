@@ -10,10 +10,6 @@ namespace CSharpLab6
     using System.Windows.Forms;
     public class TransPanel : Panel
     {
-        public TransPanel()
-        {
-            //InvalidateEx();
-        }
         protected override CreateParams CreateParams
         {
             get
